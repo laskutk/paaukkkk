@@ -5,7 +5,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     margin: 0;
-    background-color: #f0f0f0; /* светло-желтый фон */
+    background-color: #f0f0f0;
 }
 
 .box {
@@ -28,13 +28,8 @@ html, body {
     display: none;
 }
 
-.margin-top-10 {
-    padding-top: 10px;
-}
-
-.margin-bot-10 {
-    padding-bottom: 10px;
-}
+.margin-top-10 { padding-top: 10px; }
+.margin-bot-10 { padding-bottom: 10px; }
 
 #landing h1 {
     font-family: 'Oswald', sans-serif;
@@ -51,7 +46,7 @@ html, body {
     font-size: 70px;
     letter-spacing: 10px;
     text-align: center;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     font-weight: 400;
     text-transform: uppercase;
     z-index: 10;
@@ -86,12 +81,11 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Стартовые буквы */
-.fl { color: #FF0000; } /* оранжевый */
-.fm { color: #1E90FF; } /* синий */
-.fs { color: #FFD700; } /* зеленый */
+/* стартовые буквы Человека-паука */
+.fl { color: #FF0000; } /* красный */
+.fm { color: #0000FF; } /* синий */
+.fs { color: #FFFF00; } /* желтый */
 
-/* Заголовочная часть */
 #landing .title {
     background: white;
     padding: 60px;
@@ -99,12 +93,8 @@ html, body {
     text-align: center;
 }
 
-#landing .title h1 {
-    font-size: 35px;
-    letter-spacing: 8px;
-}
+#landing .title h1 { font-size: 35px; letter-spacing: 8px; }
 
-/* Блоки текста */
 #landing .block {
     background: white;
     padding: 6px;
@@ -113,12 +103,8 @@ html, body {
     text-align: justify;
 }
 
-#landing .block-gray {
-    background: #f2f2f2;
-    padding: 6px;
-}
+#landing .block-gray { background: #f2f2f2; padding: 6px; }
 
-/* Маска блоков поверх иллюстраций */
 #landing .section-overlay-mask {
     position: absolute;
     top: 0;
@@ -129,78 +115,67 @@ html, body {
     opacity: 0.70;
 }
 
-/* Иллюстрации */
-#landing .parallax-one {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url("https://raw.githubusercontent.com/laskutk/paaukkkk/main/tom%20holland1.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+/* Параллаксы с фото Том Холланд */
+#landing .parallax-one { 
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url("https://raw.githubusercontent.com/laskutk/paaukkkk/main/tom%20holland1.jpg"); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center; 
 }
 
-#landing .parallax-two {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url("https://raw.githubusercontent.com/laskutk/paaukkkk/main/tom%20holland2.webp");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+#landing .parallax-two { 
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url("https://raw.githubusercontent.com/laskutk/paaukkkk/main/tom%20holland2.webp"); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
 }
 
-#landing .parallax-three {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url("https://raw.githubusercontent.com/laskutk/paaukkkk/main/tom%20holland333.webp");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+#landing .parallax-three { 
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url("https://raw.githubusercontent.com/laskutk/paaukkkk/main/tom%20holland333.webp"); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
 }
 
-/* Градиенты-разделители, согласованные со стартовыми буквами */
+/* Трехцветные градиенты */
 #landing .line-break-one { 
-    background: linear-gradient(60deg, #FF0000, #FF6666, #FF9999); 
+    background: linear-gradient(90deg, #FF0000, #FF6347, #0000FF); /* красный → томат → синий */ 
     width: 100%; 
     margin: 0 auto; 
 }
 
 #landing .line-break-two { 
-    background: linear-gradient(60deg, #1E90FF, #6699FF, #99CCFF); 
+    background: linear-gradient(90deg, #0000FF, #1E90FF, #00FFFF); /* синий → голубой → циан */ 
     width: 100%; 
     margin: 0 auto; 
 }
 
 #landing .line-break-three { 
-    background: linear-gradient(60deg, #FFD700, #FFE066, #FFF399); 
+    background: linear-gradient(90deg, #FFFF00, #FFD700, #FFA500); /* желтый → золотой → оранжевый */ 
     width: 100%; 
     margin: 0 auto; 
 }
 
-/* Адаптивная верстка */
-@media screen and (max-width: 959px) and (min-width: 768px) {
-    #landing .block { padding: 40px; width: 620px; }
-}
-
-@media screen and (max-width: 767px) {
-    #landing .block { padding: 30px; width: 420px; }
-    #landing h2 { font-size: 30px; }
-    #landing .block { padding: 30px; }
-    #landing .parallax-one, #landing .parallax-two, #landing .parallax-three { padding-top: 100px; padding-bottom: 100px; }
-}
-
-@media screen and (max-width: 479px) {
-    #landing .block { padding: 30px 15px; width: 290px; }
+@media screen and (max-width: 959px) and (min-width: 768px) { #landing .block { padding: 40px; width: 620px; } }
+@media screen and (max-width: 767px) { #landing .block { padding: 30px; width: 420px; } #landing h2 { font-size: 30px; } #landing .block { padding: 30px; } #landing .parallax-one, #landing .parallax-two, #landing .parallax-three { padding-top: 100px; padding-bottom: 100px; } }
+@media screen and (max-width: 479px) { #landing .block { padding: 30px 15px; width: 290px; } }
+	
+	
