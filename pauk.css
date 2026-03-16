@@ -1,3 +1,5 @@
+
+	
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic');
 
@@ -13,6 +15,8 @@ html, body {
     position: absolute;
     margin-top: -450px;
     overflow: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #main {
@@ -81,7 +85,7 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* стартовые буквы Человека-паука */
+/* стартовые буквы */
 .fl { color: #FF0000; } /* красный */
 .fm { color: #0000FF; } /* синий */
 .fs { color: #FFFF00; } /* желтый */
@@ -115,7 +119,7 @@ html, body {
     opacity: 0.70;
 }
 
-/* Параллаксы с фото Том Холланд */
+/* Параллаксы */
 #landing .parallax-one { 
     padding-top: 200px; 
     padding-bottom: 200px; 
@@ -157,25 +161,23 @@ html, body {
 
 /* Трехцветные градиенты */
 #landing .line-break-one { 
-    background: linear-gradient(90deg, #FF0000, #FF6347, #0000FF); /* красный → томат → синий */ 
+    background: linear-gradient(90deg, #FF0000, #FF6347, #0000FF); 
     width: 100%; 
     margin: 0 auto; 
 }
 
 #landing .line-break-two { 
-    background: linear-gradient(90deg, #0000FF, #1E90FF, #00FFFF); /* синий → голубой → циан */ 
+    background: linear-gradient(90deg, #0000FF, #1E90FF, #00FFFF); 
     width: 100%; 
     margin: 0 auto; 
 }
 
 #landing .line-break-three { 
-    background: linear-gradient(90deg, #FFFF00, #FFD700, #FFA500); /* желтый → золотой → оранжевый */ 
+    background: linear-gradient(90deg, #FFFF00, #FFD700, #FFA500); 
     width: 100%; 
     margin: 0 auto; 
 }
 
 @media screen and (max-width: 959px) and (min-width: 768px) { #landing .block { padding: 40px; width: 620px; } }
-@media screen and (max-width: 767px) { #landing .block { padding: 30px; width: 420px; } #landing h2 { font-size: 30px; } #landing .block { padding: 30px; } #landing .parallax-one, #landing .parallax-two, #landing .parallax-three { padding-top: 100px; padding-bottom: 100px; } }
+@media screen and (max-width: 767px) { #landing .block { padding: 30px; width: 420px; } #landing h2 { font-size: 30px; } #landing .parallax-one, #landing .parallax-two, #landing .parallax-three { padding-top: 100px; padding-bottom: 100px; } }
 @media screen and (max-width: 479px) { #landing .block { padding: 30px 15px; width: 290px; } }
-	
-	
